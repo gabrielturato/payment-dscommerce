@@ -11,4 +11,5 @@ public class PaymentDTO {
 
     private Long id;
     private Instant moment;
+    private Long orderId;
 }
