@@ -20,6 +20,6 @@ public enum PaymentMethod {
                 return paymentMethod;
             }
         }
-        throw new IllegalArgumentException("Código de status inválido: " + codigo);
+        throw new IllegalArgumentException("Payment method invalid: " + codigo);
     }
 }
