@@ -6,12 +6,15 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.Instant;
+
 @Getter
 @Setter
 @NoArgsConstructor
 @JsonSerialize
-public class PaymentDTO {
+public class PaymentProducerDTO {
 
+    private Instant moment;
     private PaymentMethod method;
     private Long orderId;
 }
