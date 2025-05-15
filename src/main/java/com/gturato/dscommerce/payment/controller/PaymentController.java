@@ -18,7 +18,7 @@ public class PaymentController {
 
     @PostMapping
     ResponseEntity<Void> pay(@RequestBody PaymentDTO dto){
-        //service.pay(dto);
+        service.pay(dto);
         return ResponseEntity.noContent().build();
     }
 }

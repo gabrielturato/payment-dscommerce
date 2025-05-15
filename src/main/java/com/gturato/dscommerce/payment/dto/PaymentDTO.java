@@ -1,12 +1,17 @@
 package com.gturato.dscommerce.payment.dto;
 
-import lombok.AllArgsConstructor;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 import java.time.Instant;
 
 @Getter
-@AllArgsConstructor
+@Setter
+@NoArgsConstructor
+@JsonSerialize
 public class PaymentDTO {
 
     private Long id;
